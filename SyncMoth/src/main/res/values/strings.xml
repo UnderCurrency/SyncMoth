@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name" translatable="false">SyncMoth</string>
+    <string name="MESSAGE_CONNECT_YOUR_USB_HID_DEVICE">Please connect your USB device</string>
+    <string name="MESSAGE_SELECT_YOUR_USB_HID_DEVICE">Please select your USB device</string>
+    <string name="DEVICE_ATTACHED">AudioMoth attached</string>
+    <!-- Recording Settings -->
+    <string name="tab_text_1">Recording</string>
+    <string name="tv_sample_rate">Sample rate (kHz):</string>
+    <string name="hz8" translatable="false">8</string>
+    <string name="hz16" translatable="false">16</string>
+    <string name="hz32" translatable="false">32</string>
+    <string name="hz48" translatable="false">48</string>
+    <string name="hz96" translatable="false">96</string>
+    <string name="hz192" translatable="false">192</string>
+    <string name="hz250" translatable="false">250</string>
+    <string name="hz384" translatable="false">384</string>
+    <string name="tv_gain">Gain:</string>
+    <string name="low">Low</string>
+    <string name="med">Med</string>
+    <string name="high">High</string>
+    <string name="ckbEnableCyclingRecording">Enable sleep/record cycling recording:</string>
+    <string name="tv_sleep_duration">Sleep duration (s):</string>
+    <string name="tv_recording_duration">Recording duration (s):</string>
+    <string name="ckbEnableLed">Enable LED:</string>
+    <string name="ckbEnableLowVoltageCutOff">Enable low-voltage cut-off:</string>
+    <string name="ckbEnableBatteryLevelIndication">Enable battery level indication:</string>
+    <!-- Recording Schedule -->
+    <string name="tab_text_2">Schedule</string>
+    <string name="format_24h">The hour format is in 24h</string>
+    <string name="start_recording">Start recording:</string>
+    <string name="end_recording">End recording:</string>
+    <string name="add_recording_period">Add recording period</string>
+    <string name="remove_selected_period">Remove selected period</string>
+    <string name="clear_all_periods">Clear all periods</string>
+    <string name="first_recording_date_utc">First recording date (UTC%d)</string>
+    <string name="last_recording_date_utc">Last recording date (UTC%d)</string>
+    <string name="hrs0" translatable="false">00:00</string>
+    <string name="hrs24" translatable="false">24:00</string>
+    <string name="format_shedule">Start recording %02d:%02d, end recording %02d:%02d</string>
+    <string name="format_hour" translatable="false">%02d:%02d</string>
+    <string name="java_format_hour" translatable="false">hh:mm</string>
+    <string name="schedule_date_format" translatable="false">dd/MM/yyyy</string>
+    <string name="estimated_data_current_consumption_duty_on">"Daily files used: %d, each %s %s<br />\nDaily storage use: %s<br />\nApproximate daily energy use: %.0f mAh<br />\nA 32GB card will last: %d day%s"</string>
+    <string name="estimated_data_current_consumption_duty_off">"Daily files used: %d %s<br />\nDaily storage %s<br />\nApproximate daily energy use: %.0f mAh<br />\nA 32GB card will last: %d day%s"</string>
+    <string name="PLURAL">s</string>
+    <string name="SINGULAR"> </string>
+    <string name="UP_TO_FILE">up to</string>
+    <string name="UP_TO_TOTAL"></string>
+    <string name="TIMEZONE" translatable="false">Z</string>
+    <!-- Advanced Settings -->
+    <string name="tab_text_3">Advanced</string>
+    <string name="enable_filtering">Enable filtering:</string>
+    <string name="tv_filter_type">Filter type</string>
+    <string name="band">Band</string>
+    <string name="kHz0" translatable="false">0 kHz</string>
+    <string name="kHzMax" translatable="false">%d kHz</string>
+    <string name="recording_filtering">Low Frequency %.1f kHz.\n<br/>High Frequency %.1f kHz.</string>
+    <string name="threshold_initial_value" translatable="false">0</string>
+
+    <string name="amplitude_threshold">Enable amplitude threshold recording:</string>
+    <string name="min_amplitude_threshold" translatable="false">0</string>
+    <string name="max_amplitude_threshold" translatable="false">32768</string>
+    <string name="audio_recordings_sd">All audio recordings will be written.</string>
+    <string name="audio_recordings_amplitude">Only sounds with amplitude bigger<br/>\nthan %d will be recorded.</string>
+    <!-- Pre settings -->
+    <string name="tab_text_4">Home</string>
+    <string name="pre_settings_">Pre settings</string>
+    <string name="date_format" translatable="false">HH:mm:ss dd/MM/yyyy Z</string>
+    <string name="device_id"  translatable="false">Device ID:</string>
+    <string name="device_id_empty"  translatable="false">0000000000000000</string>
+    <string name="firmware_version">Firmware version:</string>
+    <string name="firmware_version_empty"  translatable="false">0.0.0</string>
+    <string name="battery">Battery:</string>
+    <string name="battery_empty" translatable="false">0.0V</string>
+    <string name="audible">Audible</string>
+    <string name="ultrasonic">Ultrasonic</string>
+    <string name="ultrasonic_loaded">ULTRASONIC loaded</string>
+    <string name="audible_loaded">AUDIBLE loaded</string>
+
+    <string name="splashscreen">CONABIO AudioMoth Configurator</string>
+    <string name="upload_config">Configure</string>
+    <string name="content_description_upload_config">Synchronize AudioMoth with current configuration</string>
+    <string name="share">Share</string>
+    <string name="help">Help</string>
+    <string name="content_description_help">Help</string>
+    <string name="content_description_share">Choose a way to share</string>
+    <string name="device_attached">Device attached</string>
+    <string name="connect_device">Connect</string>
+    <string name="am_response">AudioMoth response (JSON)</string>
+    <string name="FILE_NAME_FORMAT" translatable="false">AM-%1$TY%1$Tm%1$Td-%2$s.config</string>
+    <string name="CONFIG_SENT_SUCCESS">Synchronization success!</string>
+    <string name="CONFIG_SENT_FAIL">Synchronization error</string>
+    <string name="DISMISS">Dismiss</string>
+    <string name="txvStartTime">Start time:</string>
+    <string name="txvEndTime">End time:</string>
+    <string translatable="false" name="hour_format">HH:mm</string>
+    <string name="content_description_connect">Connect AudioMoth</string>
+
+</resources>

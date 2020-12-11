@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_state_gray_1">#2A3F3A</color>
+    <color name="dark_state_gray_2">#38524C</color>
+    <color name="xanadu">#78908A</color>
+    <color name="batleship_gray1">#838C89</color>
+    <color name="cordovan">#993C46</color>
+    <color name="colorAccent">#993C46</color>
+    <color name="conabio_verde">#829E3D</color>
+    <color name="inactive">@color/xanadu</color>
+    <color name="active">@color/dark_state_gray_2</color>
+</resources>

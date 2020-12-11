@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_pre_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".ui.main.PreSettingsFragment">
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separation_thickness"
+        android:layout_marginTop="24dp"
+        android:background="@color/xanadu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_battery" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/date_format"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_device_id_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/device_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+    <TextView
+        android:id="@+id/tv_device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/device_id_empty"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toEndOf="@+id/tv_device_id_lbl"
+        app:layout_constraintTop_toTopOf="@+id/tv_device_id_lbl" />
+
+    <TextView
+        android:id="@+id/tv_firmware_version_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firmware_version"
+        app:layout_constraintStart_toStartOf="@+id/tv_device_id_lbl"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device_id_lbl" />
+
+    <TextView
+        android:id="@+id/tv_firmware_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firmware_version_empty"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_device_id"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device_id" />
+
+    <TextView
+        android:id="@+id/tv_battery_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/battery"
+        app:layout_constraintStart_toStartOf="@+id/tv_firmware_version_lbl"
+        app:layout_constraintTop_toBottomOf="@+id/tv_firmware_version_lbl" />
+
+    <Button
+        android:id="@+id/btn_ultrasound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ultrasonic"
+        app:layout_constraintStart_toStartOf="@+id/tv_battery_lbl"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_audible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/audible"
+        app:layout_constraintStart_toEndOf="@+id/btn_ultrasound"
+        app:layout_constraintTop_toTopOf="@+id/btn_ultrasound" />
+
+    <TextView
+        android:id="@+id/tv_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/battery_empty"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_firmware_version"
+        app:layout_constraintTop_toBottomOf="@+id/tv_firmware_version" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/pre_settings_"
+        app:layout_constraintStart_toStartOf="@+id/tv_battery_lbl"
+        app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+    <View
+        android:id="@+id/dividerPre"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separation_thickness"
+        android:layout_marginTop="24dp"
+        android:background="@color/xanadu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_audible" />
+
+    <TextView
+        android:id="@+id/tv_ec_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lines="5"
+        android:text="lorem ipsum"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/dividerPre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

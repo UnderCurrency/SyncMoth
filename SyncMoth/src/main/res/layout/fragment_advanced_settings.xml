@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/tv_sleep_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/enable_filtering"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chk_enable_filtering"
+            android:layout_width="27dp"
+            android:layout_height="20dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_sleep_recording"
+            app:layout_constraintTop_toTopOf="@+id/tv_sleep_recording" />
+
+        <TextView
+            android:id="@+id/tv_filter_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tv_filter_type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_sleep_recording"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sleep_recording" />
+
+        <RadioGroup
+            android:id="@+id/rdg_filter_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_filter_type"
+            app:layout_constraintTop_toBottomOf="@+id/tv_filter_type">
+
+            <RadioButton
+                android:id="@+id/rbLow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@android:drawable/btn_radio"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/low" />
+
+            <RadioButton
+                android:id="@+id/rbMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:buttonTint="@color/active"
+                android:drawableBottom="@android:drawable/btn_radio"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/band" />
+
+            <RadioButton
+                android:id="@+id/rbHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:buttonTint="@color/active"
+                android:drawableBottom="@android:drawable/btn_radio"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/high" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_recording_filtering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/recording_filtering"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rdg_filter_type"
+            app:layout_constraintTop_toBottomOf="@+id/rdg_filter_type" />
+
+
+        <com.rizlee.rangeseekbar.RangeSeekBar
+            android:id="@+id/rsbFreqFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbarThumbHorizontal="@drawable/custom_slider_thumb"
+            android:scrollbarThumbVertical="@drawable/custom_slider_thumb"
+            android:scrollbarTrackVertical="@drawable/custom_slider_thumb"
+            app:active="true"
+            app:barHeight="@dimen/seek_bar_thickness"
+            app:centerColor="@color/active"
+            app:centerText=""
+            app:enableGradient="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recording_filtering"
+            app:leftText="@string/kHz0"
+            app:maxValue="24"
+            app:minValue="0"
+            app:rightText="@string/kHzMax"
+            app:roundedCorners="true"
+            app:showAdditionalText="above"
+            app:showThumbsText="below"
+            app:sideColor="@color/xanadu"
+            app:stepValue="0.1"
+            app:textColor="@android:color/black"
+            app:textFont="@font/roboto_medium"
+            app:thumbsNormal="@drawable/custom_slider_thumb"
+            app:thumbsPressed="@drawable/custom_slider_thumb"
+            app:thumbsTextMargin="6dp"
+            app:valueType="floatType" />
+
+        <TextView
+            android:id="@+id/tv_amplitude_thresholding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/amplitude_threshold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <CheckBox
+            android:id="@+id/chk_enable_amplitude_threshold"
+            android:layout_width="27dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/tv_amplitude_thresholding"
+            app:layout_constraintTop_toTopOf="@+id/tv_amplitude_thresholding" />
+
+        <TextView
+            android:id="@+id/tv_amplitude_threshold_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:lines="2"
+            android:text="@string/audio_recordings_amplitude"
+            app:layout_constraintStart_toStartOf="@+id/tv_amplitude_thresholding"
+            app:layout_constraintTop_toBottomOf="@+id/tv_amplitude_thresholding" />
+
+        <SeekBar
+            android:id="@+id/sbr_amplitude_thresholding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:max="96"
+            android:min="0"
+            android:progress="1"
+            android:progressBackgroundTint="@color/active"
+            android:progressDrawable="@drawable/progress_drawable"
+            android:progressTint="@color/xanadu"
+            android:thumb="@drawable/seek_thumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_amplitude_thresholding"
+            app:layout_constraintTop_toBottomOf="@+id/tv_amplitude_threshold_explain" />
+
+        <TextView
+            android:id="@+id/tv_min_amplitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/min_amplitude_threshold"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/sbr_amplitude_thresholding"
+            app:layout_constraintTop_toBottomOf="@+id/sbr_amplitude_thresholding" />
+
+        <TextView
+            android:id="@+id/tv_max_amplitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/max_amplitude_threshold"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sbr_amplitude_thresholding" />
+
+        <TextView
+            android:id="@+id/tv_ec_adv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:lines="5"
+            android:text="lorem ipsum"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_sleep_recording"
+            app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+        <TextView
+            android:id="@+id/txv_placeholder_adv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="12"
+            android:text=" "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_ec_adv"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ec_adv" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separation_thickness"
+            android:layout_marginTop="24dp"
+            android:background="@color/xanadu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rsbFreqFilter" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separation_thickness"
+            android:layout_marginTop="24dp"
+            android:background="@color/xanadu"
+            app:layout_constraintEnd_toEndOf="@+id/tv_max_amplitude"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_max_amplitude" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

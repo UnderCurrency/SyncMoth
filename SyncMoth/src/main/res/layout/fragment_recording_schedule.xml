@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cnlyRecordingSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separation_thickness"
+            android:layout_marginTop="16dp"
+            android:background="@color/xanadu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lilLastRecordingDate" />
+
+        <LinearLayout
+            android:id="@+id/lilStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txvStartTime" />
+
+            <EditText
+                android:id="@+id/edtx_start_time"
+                android:layout_width="111dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="false"
+                android:inputType="none"
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lilEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lilStartTime">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txvEndTime" />
+
+            <EditText
+                android:id="@+id/edtx_end_time"
+                android:layout_width="111dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="false"
+                android:inputType="none"
+                app:autoSizeTextType="uniform" />
+
+
+        </LinearLayout>
+
+     <!--   <TextView
+            android:id="@+id/txv_recording_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/format_shedule"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.rizlee.rangeseekbar.RangeSeekBar
+            android:id="@+id/rsbRecordingSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            app:active="true"
+            app:barHeight="6dp"
+            app:centerColor="@color/active"
+            app:centerText=""
+            app:enableGradient="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txv_recording_period"
+            app:leftText=""
+            app:maxValue="24"
+            app:minValue="0"
+            app:rightText=""
+            app:roundedCorners="true"
+            app:showAdditionalText="above"
+            app:showThumbsText="none"
+            app:sideColor="@color/xanadu"
+            app:stepValue="0.5"
+            app:textColor="@android:color/black"
+            app:thumbsNormal="@drawable/custom_slider_thumb"
+            app:thumbsPressed="@drawable/custom_slider_thumb"
+            app:thumbsTextMargin="6dp"
+            app:valueType="floatType" />-->
+
+        <TextView
+            android:id="@+id/txv_label_24h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/format_24h"
+            app:layout_constraintStart_toStartOf="@+id/lilEndTime"
+            app:layout_constraintTop_toBottomOf="@+id/lilEndTime" />
+
+
+        <Button
+            android:id="@+id/btnAddRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/add_recording_period"
+            app:layout_constraintStart_toStartOf="@+id/txv_label_24h"
+            app:layout_constraintTop_toBottomOf="@+id/txv_label_24h" />
+
+
+        <ListView
+            android:id="@+id/lstvwRecordingSchedule"
+            android:layout_width="268dp"
+            android:layout_height="189dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_key"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/xanadu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAddRecording">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btnClearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_all_periods"
+            app:layout_constraintStart_toStartOf="@+id/btnRemoveSelected"
+            app:layout_constraintTop_toBottomOf="@+id/btnRemoveSelected" />
+
+        <Button
+            android:id="@+id/btnRemoveSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/remove_selected_period"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lstvwRecordingSchedule" />
+
+        <TextView
+            android:id="@+id/tv_estimated_consumption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:lines="5"
+            android:text="lorem ipsum"
+            app:layout_constraintLeft_toLeftOf="@+id/lilLastRecordingDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/txv_placeholder_rec_shc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:lines="12"
+            android:text=" "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lilLastRecordingDate"
+            app:layout_constraintTop_toTopOf="@+id/tv_estimated_consumption" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separation_thickness"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/xanadu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnClearAll" />
+
+        <LinearLayout
+            android:id="@+id/lilFirstRecordingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+            <CheckBox
+                android:id="@+id/chkb_first_recording_date"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/txv_first_recording_date_utc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_recording_date_utc" />
+
+            <EditText
+                android:id="@+id/edtx_first_recording_date"
+                android:layout_width="111dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="none"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lilLastRecordingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/lilFirstRecordingDate">
+
+            <CheckBox
+                android:id="@+id/chkb_last_recording_date"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:id="@+id/txv_last_recording_date_utc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_recording_date_utc" />
+
+            <EditText
+                android:id="@+id/edtx_last_recording_date"
+                android:layout_width="111dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="none" />
+
+        </LinearLayout>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

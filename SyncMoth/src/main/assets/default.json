@@ -1,0 +1,18 @@
+{
+"timePeriods": [],
+"ledEnabled": true,
+"lowVoltageCutoffEnabled": true,
+"batteryLevelCheckEnabled": true,
+"sampleRate": 48000,
+"gain": 2,
+"recordDuration": 55,
+"sleepDuration": 5,
+"localTime": true,
+"dutyEnabled": true,
+"passFiltersEnabled": false,
+"filterType": "band",
+"lowerFilter": 6000,
+"higherFilter": 18000,
+"amplitudeThresholdingEnabled": false,
+"amplitudeThreshold": 0
+}

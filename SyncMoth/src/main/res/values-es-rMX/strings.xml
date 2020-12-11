@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MESSAGE_CONNECT_YOUR_USB_HID_DEVICE">Conectar su dispositivo USB</string>
+    <string name="MESSAGE_SELECT_YOUR_USB_HID_DEVICE">Seleccionar su dispositivo USB</string>
+    <string name="DEVICE_ATTACHED">AudioMoth conectado</string>
+    <string name="tab_text_1">Configuración</string>
+    <string name="tv_sample_rate">Tasa de Muestreo (kHz):</string>
+    <string name="tv_gain">Ganancia:</string>
+    <string name="low">Baja</string>
+    <string name="med">Media</string>
+    <string name="high">Alta</string>
+    <string name="ckbEnableCyclingRecording">Habilitar ciclos de grabación y reposo:</string>
+    <string name="tv_sleep_duration">Tiempo de reposo (s):</string>
+    <string name="tv_recording_duration">Tiempo de grabación (s):</string>
+    <string name="ckbEnableLed">Habilitar LED:</string>
+    <string name="ckbEnableLowVoltageCutOff">Desactivar con bajo voltaje:</string>
+    <string name="ckbEnableBatteryLevelIndication">Indicar estado de la batería:</string>
+    <!-- Configuración de grabación -->
+    <string name="tab_text_2">Programación</string>
+    <string name="format_24h">El formato es de 24 horas</string>
+    <string name="start_recording">Inicio:</string>
+    <string name="end_recording">Fin:</string>
+    <string name="add_recording_period">Agregar periodo</string>
+    <string name="remove_selected_period">Eliminar periodo</string>
+    <string name="clear_all_periods">Borrar todos</string>
+    <string name="first_recording_date_utc">Fecha de inicio (UTC%d)</string>
+    <string name="last_recording_date_utc">Fecha de término (UTC%d)</string>
+    <string name="hrs0" translatable="false">00:00</string>
+    <string name="hrs24" translatable="false">24:00</string>
+    <string name="format_shedule">Inicia %02d:%02d, termina %02d:%02d</string>
+    <string name="schedule_date_format" translatable="false">dd/MM/yyyy</string>
+    <string name="estimated_data_current_consumption_duty_on">"Archivos diarios: %d<br/>\nEspacio por archivo: %s %s<br/>\nEspacio diario: %s<br />\nConsumo diario de energía aproximado: %.0f mAh<br />\nUna tarjeta de 32GB durará: %d dia%s"</string>
+    <string name="estimated_data_current_consumption_duty_off">"Archivos diarios: %d<br/>\nEspacio diario: %s %s<br />\nConsumo diario de energía aproximado: %.0f mAh<br />\nUna tarjeta de 32GB durará: %d dia%s"</string>
+    <string name="PLURAL">s</string>
+    <string name="SINGULAR"></string>
+    <string name="UP_TO_FILE">hasta</string>
+    <string name="UP_TO_TOTAL"></string>
+    <string name="tab_text_3">Avanzada</string>
+    <string name="enable_filtering">Habilitar filtrado:</string>
+    <string name="tv_filter_type">Tipo de filtro</string>
+    <string name="band">Banda</string>
+    <string name="recording_filtering">Frecuencia baja: %.1f kHz.<br/>\nFrecuencia alta: %.1f kHz.</string>
+    <string name="amplitude_threshold">Habilitar el umbral de amplitud:</string>
+    <string name="audio_recordings_sd">Todos los segmentos de audio serán guardados.</string>
+    <string name="audio_recordings_amplitude">Sólo se grabarán los sonidos de<br/>\namplitud mayor a %d.</string>
+    <!-- Pre settings -->
+    <string name="tab_text_4">Inicio</string>
+    <string name="pre_settings_">Pre configuraciones</string>
+    <string name="firmware_version">Versión del firmware</string>
+    <string name="battery">Batería:</string>
+    <string name="audible">Audible</string>
+    <string name="ultrasonic">Ultrasónico</string>
+    <string name="ultrasonic_loaded">Preconfiguración ULTRASÓNICA cargada</string>
+    <string name="audible_loaded">Preconfiguración AUDIBLE cargada</string>
+    <string name="splashscreen">Configurador de Audiomoth CONABIO</string>
+    <string name="upload_config">Configurar</string>
+    <string name="content_description_upload_config">Sincronizar el AudioMoth con la configuración actual</string>
+    <string name="share">Compartir</string>
+    <string name="help">Ayuda</string>
+    <string name="content_description_help">Ayuda</string>
+    <string name="content_description_share">Selecciona una forma de compartir</string>
+    <string name="device_attached">AudioMoth vinculado</string>
+    <string name="connect_device">Vincular</string>
+    <string name="am_response">Respuesta de AudioMoth (JSON)</string>
+    <string name="CONFIG_SENT_SUCCESS">Configuración exitosa</string>
+    <string name="CONFIG_SENT_FAIL">La configuración falló</string>
+    <string name="DISMISS">Descartar</string>
+    <string name="txvStartTime">Hora inicial:</string>
+    <string name="txvEndTime">Hora final:</string>
+    <string name="content_description_connect">Vincular AudioMoth</string>
+</resources>
