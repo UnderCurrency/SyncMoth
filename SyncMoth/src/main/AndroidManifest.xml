@@ -7,7 +7,7 @@
 
     <application
         tools:replace="android:label"
-        android:label="SyncMoth"
+        android:label="SM SIPECAM"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"

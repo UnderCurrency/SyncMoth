@@ -113,8 +113,6 @@ public class MainActivity extends AppCompatActivity {
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
-        TabLayout tabs = findViewById(R.id.tabs);
-        tabs.setupWithViewPager(viewPager);
         toolbar = findViewById(R.id.bottom_navigation);
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                         eventBus.post(new AudioMothSetDateEvent(new Date()));
                     }
                 } else if(id == R.id.mnu_help){
-                    String url = "https://www.gob.mx/conabio";
+                    String url = getString(R.string.url_sipecam);
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(url));
                     startActivity(i);

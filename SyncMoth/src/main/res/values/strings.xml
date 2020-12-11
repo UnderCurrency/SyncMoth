@@ -95,5 +95,6 @@
     <string name="txvEndTime">End time:</string>
     <string translatable="false" name="hour_format">HH:mm</string>
     <string name="content_description_connect">Connect AudioMoth</string>
+    <string translatable="false" name="url_sipecam">https://bit.ly/3gycR9C</string>
 
 </resources>

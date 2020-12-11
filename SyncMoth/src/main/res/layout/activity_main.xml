@@ -47,19 +47,6 @@
                 app:srcCompat="@drawable/ic_frog_inactive" />
         </LinearLayout>
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/active"
-            app:tabBackground="@color/xanadu"
-            app:tabGravity="fill"
-            app:tabIndicatorColor="@color/active"
-            app:tabIndicatorHeight="6dp"
-            app:tabMaxWidth="0dp"
-            app:tabMode="auto"
-            app:tabTextColor="@color/white" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
