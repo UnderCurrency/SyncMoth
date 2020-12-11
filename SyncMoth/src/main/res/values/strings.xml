@@ -95,5 +95,5 @@
     <string name="txvEndTime">End time:</string>
     <string translatable="false" name="hour_format">HH:mm</string>
     <string name="content_description_connect">Connect AudioMoth</string>
-
+    <string translatable="false" name="url">https://monitoreo.conabio.gob.mx/manuales/manual_app_syncmoth.pdf</string>
 </resources>
