@@ -127,6 +127,7 @@
             app:minValue="0"
             app:rightText="@string/kHzMax"
             app:roundedCorners="true"
+            app:additionalTextMargin="16dp"
             app:showAdditionalText="above"
             app:showThumbsText="below"
             app:sideColor="@color/xanadu"
@@ -135,7 +136,7 @@
             app:textFont="@font/roboto_medium"
             app:thumbsNormal="@drawable/custom_slider_thumb"
             app:thumbsPressed="@drawable/custom_slider_thumb"
-            app:thumbsTextMargin="6dp"
+            app:thumbsTextMargin="12dp"
             app:valueType="floatType" />
 
         <TextView
