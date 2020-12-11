@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">SyncMoth</string>
+    <string name="app_name" translatable="false">SM SIPECAM</string>
     <string name="MESSAGE_CONNECT_YOUR_USB_HID_DEVICE">Please connect your USB device</string>
     <string name="MESSAGE_SELECT_YOUR_USB_HID_DEVICE">Please select your USB device</string>
     <string name="DEVICE_ATTACHED">AudioMoth attached</string>
