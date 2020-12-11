@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
                         eventBus.post(new AudioMothSetDateEvent(new Date()));
                     }
                 } else if(id == R.id.mnu_help){
-                    String url = "https://www.gob.mx/conabio";
+                    String url = getString(R.string.url_conabio_syncmoth);
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(url));
                     startActivity(i);
